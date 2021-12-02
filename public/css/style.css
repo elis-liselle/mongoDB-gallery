@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+h1{
+    margin-top: 10px;
+}
 .gallery {
     display: grid;
     gap: 10px;
@@ -52,6 +55,10 @@
 
 .image4 {
     grid-area: image4;
+}
+
+.wishList{
+    text-align: center;
 }
 
 @media (max-width: 568px) {

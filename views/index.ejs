@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    html{
+            background-color: lavenderblush;
+    }
+</style>
 <body>
-
-    <h1>Mongo File upload</h1>
-    <hr>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="text" name="description" placeholder="insert description, e.g. image1">        
-        <input type="file" name="userFile">
-
-        <button type="submit">Submit</button>
-    </form>
-    
+    <div class="wishList">
+        <h1>Wishes</h1><br>
+         <hr> <br>
+            <% item.forEach(function(element) { %>
+                <div>
+                    <li><%= element.wish %></li>
+                </div>
+            <% }) %>
+    </div>
 </body>
 </html>
