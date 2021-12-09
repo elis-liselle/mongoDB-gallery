@@ -1,67 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1{
-    margin-top: 10px;
+h1 {
+  margin-top: 10px;
 }
 .gallery {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(3, 300px);
-    grid-template-areas: 
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(3, 300px);
+  grid-template-areas:
     "image1 image2 image2"
     "image3 image2 image2"
-    "image4 image4 image4"
-    ;
-    margin: 3rem auto;
-    height: 930px;
-    width: 930px;
+    "image4 image4 image4";
+  margin: 3rem auto;
+  height: 930px;
+  width: 930px;
 }
 
 .gallery-image {
-    height: 100%;
-    width: 100%;
-    outline-offset: 0.1rem;
-    transition: 0.6s ease-in-out;
+  height: 100%;
+  width: 100%;
+  outline-offset: 0.1rem;
+  transition: 0.6s ease-in-out;
 }
 
 .gallery-image:hover {
-    outline: 1rem solid rgba(240, 221, 211, 0.5);
-    transform: scale(1.2);
+  outline: 1rem solid rgba(240, 221, 211, 0.5);
+  transform: scale(1.2);
 }
 
 .gallery-image img {
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
-
 .image1 {
-    grid-area: image1;
+  grid-area: image1;
 }
 
 .image2 {
-    grid-area: image2;
+  grid-area: image2;
 }
 
 .image3 {
-    grid-area: image3;
+  grid-area: image3;
 }
 
 .image4 {
-    grid-area: image4;
+  grid-area: image4;
 }
 
-.wishList{
-    text-align: center;
+.wishList {
+  text-align: center;
 }
 
-@media (max-width: 568px) {
+.containerNew {
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.category {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  margin: 5px;
+}
+.displayed {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* @media (max-width: 568px) {
    body {
     background-color: black;
    }
@@ -74,4 +93,4 @@ h1{
        ;
        width: 100%;
    }
-}
+} */

@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
+  </head>
+  <style>
+    html {
+      background-color: rgb(240, 241, 157);
+    }
+  </style>
+  <body>
     <h1>Picture File And Wish Upload To MongoDB</h1>
-    <hr>
+    <hr />
     <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="text" name="description" placeholder="insert description, e.g. image1">        
-        <input type="file" name="userFile">
-        <input type="text" name="userWish" placeholder="insert your wish">
-        <button type="submit">Submit</button>
+      <input
+        type="text"
+        name="description"
+        placeholder="insert description, e.g. image1"
+      />
+      <input type="file" name="userFile" />
+      <input type="text" name="userWish" placeholder="insert your wish" />
+      <button type="submit">Submit</button>
     </form>
-    
-</body>
+  </body>
 </html>
