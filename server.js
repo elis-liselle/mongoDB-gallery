@@ -68,10 +68,8 @@ app.get("/random", (req, res) => {
 
     //console.log(document);
     //console.log(randomRecord);
-    
-    res.render("random", { item: randomRecord });
-    //res.render("random", randomRecord);
-    
+  
+    res.render("random", { item: randomRecord });    
   });
 });
 
