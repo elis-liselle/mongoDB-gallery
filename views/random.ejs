@@ -4,27 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Gallery</title>
-    <link rel="stylesheet" href="css/style.css" /> 
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <style>
-    html{
-          background-color: rgb(204, 252, 241);
+    html {
+      background-color: rgb(204, 252, 241);
     }
   </style>
   <body>
-     <div > 
-        <div ><% item.forEach(function(element) { %>
-          <img class="displayed"
-            src="<%= element.image %>"
-            alt="<%= element.imageDescription %>"/>
-        </div>   
-
-        <div > 
-          <li class="displayed"><b>WISH: </b><%= element.wish %></li>
-        </div>
-
-        <% }) %>
-
+    <div>
+      <div>
+        <img
+          class="displayed"
+          src="<%= item.image %>"
+          alt="<%= item.imageDescription %>"
+        />
       </div>
+
+      <div>
+        <li class="displayed"><b>WISH: </b><%= item.wish %></li>
+      </div>
+    </div>
   </body>
 </html>

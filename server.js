@@ -60,13 +60,24 @@ app.post("/upload", upload.single("userFile"), (req, res) => {
 
 app.get("/random", (req, res) => {
   imageModel.find().then((document) => {
-    console.log(document);
-    res.render("random", { item: document });
+
+    const randomElement = Math.floor(Math.random() * document.length);
+    let randomRecord = document[randomElement];
+
+    console.log(randomRecord);
+
+    //console.log(document);
+    //console.log(randomRecord);
+    
+    res.render("random", { item: randomRecord });
+    //res.render("random", randomRecord);
+    
   });
 });
+
 app.get("/", (req, res) => {
   imageModel.find().then((document) => {
-    console.log(document);
+    // console.log(document);
     res.render("index", { item: document });
   });
 });
